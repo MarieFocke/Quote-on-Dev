@@ -1,0 +1,20 @@
+.site-footer{
+    .main-navigation{
+        .menu-menu-1-container{
+            padding: 10px 10px;
+            .menu{ 
+                flex-flow:wrap;
+                
+                .menu-item{
+                padding:0px 5px;
+                color:#00cc00;
+                }
+                .menu-item-225,
+                .menu-item-231,
+                .menu-item-228{
+                    border-right: 1px solid #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+  display: block;
+}
+
+.hentry {
+  margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: $base__space-unit 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 $base__space-unit;
+}
+.blog {
+  background-color: #222222;
+  .post {
+    color: #fff;
+	font-family: 'EXO';
+	text-align: justify;
+    .entry-header {
+      margin: 10px;
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+    .entry-content {
+      margin: 10px;
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .site-main {
+    button {
+	  margin: 10px;
+      background-color: transparent;
+	  border-color: #00cc00;
+	  border: solid 3px;
+	  color:#00cc00;
+	  width: 200px;
+	  height: 50px;
+	  font-size: 16px;
+    }
+  }
+}
