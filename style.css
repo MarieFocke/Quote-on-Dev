@@ -304,6 +304,34 @@ mark, ins {
 big {
   font-size: 125%; }
 
+@font-face {
+  font-family: 'Exo';
+  src: url("Exo-LightItalic.eot");
+  src: url("Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("Exo-LightItalic.woff") format("woff"), url("Exo-LightItalic.ttf") format("truetype"), url("Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("Exo-Medium.eot");
+  src: url("Exo-Medium.eot?#iefix") format("embedded-opentype"), url("Exo-Medium.woff") format("woff"), url("Exo-Medium.ttf") format("truetype"), url("Exo-Medium.svg#Exo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("Exo-Light.eot");
+  src: url("Exo-Light.eot?#iefix") format("embedded-opentype"), url("Exo-Light.woff") format("woff"), url("Exo-Light.ttf") format("truetype"), url("Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("Exo-MediumItalic.eot");
+  src: url("Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("Exo-MediumItalic.woff") format("woff"), url("Exo-MediumItalic.ttf") format("truetype"), url("Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -372,19 +400,18 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00cc00;
+  border-radius: 5px;
+  background: transparent;
+  color: #00cc00;
   font-size: .75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem; }
+  padding: .6rem 1rem .4rem;
+  margin: 10px 10px; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa; }
+    border-color: #1f8e1f; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -401,29 +428,19 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  margin: 10px 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #00cc00; }
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 80%;
+  background-color: transparent;
+  border: 2px solid #00cc00;
+  border-radius: 5px;
+  margin: 10px 10px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -685,16 +702,37 @@ a {
   background-color: #222222; }
   .page-id-215 .site-header {
     padding: 30px 0px 0px 10px; }
-  .page-id-215 .site-content .content-area .site-main .post-215 {
+  .page-id-215 .site-content .content-area .site-main .container label {
+    font-family: 'EXO';
+    padding: 0px 10px;
+    color: #fff; }
+
+.single-post {
+  background-color: #222222; }
+  .single-post .site-header {
+    padding: 30px 0px 0px 10px; }
+  .single-post .site-content .content-area .site-main .post {
+    color: #fff;
     font-family: 'EXO';
     text-align: justify;
-    padding: 10px 0px 0px 10px; }
-    .page-id-215 .site-content .content-area .site-main .post-215 h1 {
-      color: #fff; }
-    .page-id-215 .site-content .content-area .site-main .post-215 h2 {
-      color: #fff; }
-    .page-id-215 .site-content .content-area .site-main .post-215 li a {
-      color: #00cc00; }
+    padding: 10px 30px 0px 30px; }
+    .single-post .site-content .content-area .site-main .post .entry-content {
+      margin: 10px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .single-post .site-content .content-area .site-main .post .entry-content p {
+        font-size: 1.25rem; }
+      .single-post .site-content .content-area .site-main .post .entry-content i {
+        display: none;
+        color: #00cc00;
+        font-size: 125px;
+        line-height: 125px; }
+    .single-post .site-content .content-area .site-main .post .entry-header {
+      margin: 10px; }
+      .single-post .site-content .content-area .site-main .post .entry-header h2 {
+        font-size: 1.25rem; }
 
 .site-footer .main-navigation .menu-menu-1-container {
   padding: 10px 10px; }

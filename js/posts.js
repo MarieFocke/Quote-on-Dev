@@ -1,6 +1,11 @@
 (function($) {
+  let lastPage='';
+  $(window).on('popstate',function(){
+    window.location.replace(lastPage);
+  });
   $('#change-quote').on('click', function(event) {
     event.preventDefault();
+    lastPage=document.URL;
     $.ajax({
       method: 'get',
       url:
@@ -10,6 +15,8 @@
         xhr.setRequestHeader('X-WP-Nonce', qod_vars.wpapi_nonce);
       }
     }).done(function(response) {
+      const url=qod_vars.home_url+'/'+ response[0].slug+'/';
+      history.pushState(null,null,url);
       $('.entry-content')
         .empty()
         .append('<p>' + response[0].content.rendered + '</p>');
@@ -33,3 +40,10 @@
       });
   });
 })(jQuery);
+
+
+// const post=data.shift(),
+// $sourceSpan=$('.source'),
+// quoteSource=response[0]._quod_quod_source,
+// quoteSourceUrl=response[0]._qod_quote_source_url;
+

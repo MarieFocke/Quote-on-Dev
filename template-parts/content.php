@@ -9,7 +9,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
+		<i class="fas fa-quote-left"></i>
 		<?php the_excerpt(); ?>
+		<i class="fas fa-quote-right"></i>
 	</div>
 	<div class="entry-meta">
 		<?php the_title( sprintf( '<h2 class="entry-title">&#8211;', esc_url( get_permalink() ) ), '</h2>' ); ?>

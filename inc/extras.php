@@ -44,7 +44,8 @@ add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
 function get_1_post( $query ) {
 	if ( is_home() || $query->is_main_query() )
 	
-	$query->set( 'posts_per_page', 1 );
+    $query->set( 'posts_per_page', 1 );
+    $query->set('orderby', 'rand');
     return;
 
 	

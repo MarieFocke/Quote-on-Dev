@@ -155,24 +155,65 @@
 	.site-content{
 		.content-area{
 			.site-main{
-				.post-215{
-					font-family: 'EXO';
-					text-align: justify;
-					padding: 10px 0px 0px 10px;
-					h1{
+				.container{
+					label{
+						font-family: 'EXO';
+						padding: 0px 10px;
 						color: #fff;
-					}
-					h2{
-						color: #fff;
-					}
-					li{
-						a{
-							color: #00cc00;
-						}
-
 					}
 				}
 			}	
 		}
 	}
 }
+
+.single-post{
+	background-color: #222222;
+	.site-header{
+		padding: 30px 0px 0px 10px;
+	}
+	.site-content{
+		.content-area{
+			.site-main{
+				.post{
+					color: #fff;
+					font-family: 'EXO';
+					text-align: justify;
+					padding: 10px 30px 0px 30px;
+					.entry-content{
+						margin:10px;
+						flex-direction:row; 
+						p{
+							font-size:1.25rem;
+						}
+						i{
+							display:none;
+							color: #00cc00;
+							font-size: 125px;
+    					line-height: 125px;
+						}
+					}
+					.entry-header {
+						margin: 10px;
+						h2 {
+							font-size: 1.25rem;
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+// @include tablet {
+// 	.list-articles li a{
+// 			display: flex;
+// 			flex-direction: row;
+// 			flex-wrap: wrap;
+// 		.img {
+// 				max-width: 50%;
+// 				flex:1 0 50%;
+// 		}
+// 	}
+// }
+// @include desktop {
+// }
