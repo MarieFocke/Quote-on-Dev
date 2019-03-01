@@ -6,8 +6,13 @@
                 flex-flow:wrap;
                 
                 .menu-item{
-                padding:0px 5px;
-                color:#00cc00;
+                padding:0px 10px 0px 10px;
+                    a{
+                    color:#00cc00;
+                    }
+                    a:hover{
+                        color:#1f8e1f;
+                    }
                 }
                 .menu-item-225,
                 .menu-item-231,
