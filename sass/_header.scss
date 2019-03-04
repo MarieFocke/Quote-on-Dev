@@ -1,8 +1,30 @@
 .site-header{
    .site-branding{
      img{
-       max-width:80% ;  
-       padding: 25px 0px 5px 0px;
+       width:300px ;  
+       padding: 5px 10px 20px 5px;
      }  
    } 
 }
+@include tablet {
+      .site-header{
+        .site-branding{
+          img{
+            width:500px;  
+            padding: 5px 0px 20px 5px;
+          }  
+        } 
+    }
+  }
+ @include desktop {
+    .site-header{
+      .site-branding{
+        text-align:center;
+        img{
+          width:700px;  
+          padding: 5px 0px 20px 5px;
+          
+        }  
+      } 
+  }
+ }

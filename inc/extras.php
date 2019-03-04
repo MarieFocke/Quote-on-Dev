@@ -42,7 +42,7 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
 
 function get_1_post( $query ) {
-	if ( is_home() || $query->is_main_query() )
+	if ( is_home() && $query->is_main_query() && !is_admin())
 	
     $query->set( 'posts_per_page', 1 );
     $query->set('orderby', 'rand');
